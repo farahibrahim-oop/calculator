@@ -1,0 +1,154 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to right, #FFB6C1, #FFC0CB);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.calculator {
+    width: 320px;
+    border-radius: 25px;
+    overflow: hidden;
+    text-align: right;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    background: #fff5f8;
+    border: 2px solid #ffc1e3;
+}
+
+.display {
+    width: 100%;
+    height: 80px;
+    background: #ffe6f0;
+    color: #ff69b4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 15px;
+    font-size: 2rem;
+    border-bottom: 3px solid #ffb3c6;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.input {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    background:#f7dbe2 ;
+    padding: 10px;
+
+}
+
+button {
+    margin: 0;
+    border: none;
+    border-radius: 15px;
+    background-color: #ffd1dc;
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff69b4;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    font-weight: bold;
+    background-color: #ff99c8;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+
+.clear, .bracket {
+    background-color: #ffe0f0;
+    color: #d47fa6;
+}
+
+.clear:hover, .bracket:hover {
+    background-color: #ffd6eb;
+}
+
+.operator {
+    background-color: #f76c6c;
+    color: white;
+}
+
+.operator:hover {
+    background-color: #e65b5b;
+}
+
+.number {
+    background-color: #ffd1dc;
+    color: #ff69b4;
+}
+
+.number:hover {
+    background-color: #ff99c8;
+}
+
+.delete {
+    background-color: #fcc9e1;
+    color: #d47fa6;
+}
+
+.delete:hover {
+    background-color: #fdbcdd;
+}
+
+.dot {
+    background-color: #ffd1dc;
+    color: #ff69b4;
+}
+
+.dot:hover {
+    background-color: #ff99c8;
+}
+
+.equal {
+    background-color: #ff85a2;
+    color: white;
+}
+
+.equal:hover {
+    background-color: #ff6b92;
+}
+
+.output {
+    font-size: 28px;
+    padding: 25px;
+}
+
+.result {
+    font-size: 18px;
+    padding: 25px;
+}
+
+@keyframes big {
+    0% {
+        font-size: 18px;
+    }
+    100% {
+        font-size: 30px;
+    }
+}
+
+@keyframes small {
+    0% {
+        font-size: 28px;
+    }
+    100% {
+        font-size: 18px;
+    }
+}
